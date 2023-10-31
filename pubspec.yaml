@@ -1,0 +1,64 @@
+name: app_task
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_gen: ^5.3.2
+  flutter_svg: ^2.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  build_runner: ^2.3.3
+  flutter_lints: ^2.0.0
+  flutter_gen_runner: ^5.3.2
+  intl: ^0.18.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/png/
+    - assets/svg/
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+          style: normal
+    - family: MontserratBold
+      fonts:
+        - asset: assets/fonts/Montserrat-ExtraBold.ttf
+          style: normal
+    - family: MontserratBold
+      fonts:
+        - asset: assets/fonts/Montserrat-Bold.ttf
+          style: normal
+    - family: PTSans
+      fonts:
+        - asset: assets/fonts/PTSans-Regular.ttf
+          style: normal
+
+flutter_gen:
+  output: lib/gen/
+  assets:
+    outputs:
+      style: dot-delimiter
+
+  
+  integrations:
+    flutter_svg: true
+    flare_flutter: true
+    rive: true
+    lottie: true  
