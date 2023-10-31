@@ -12,7 +12,7 @@ class CustomPrices extends StatefulWidget {
 }
 
 class _CustomPricesState extends State<CustomPrices> {
-  int? selectedIndex = 1;
+  int? selectedIndex = 0;
 
   @override
   void initState() {
@@ -48,14 +48,25 @@ class _CustomPricesState extends State<CustomPrices> {
                       boxShadow: const [
                         BoxShadow(
                           offset: Offset(0, 3),
-                          color: Color(0xFFC7C7C7),
+                          color: Color(0x405988F8),
+                          blurRadius: 3,
+                          spreadRadius: 3,
                         )
                       ],
                     )
                   : BoxDecoration(
                       color: kLightGreen,
                       borderRadius: BorderRadius.circular(24),
+                      boxShadow: const [
+                        BoxShadow(
+                          offset: Offset(0, 3),
+                          color: Color(0x405988F8),
+                          blurRadius: 8,
+                          spreadRadius: 6,
+                        )
+                      ],
                       image: DecorationImage(
+
                         fit: BoxFit.cover,
                         alignment: Alignment.center,
                         scale: 2,
@@ -93,7 +104,7 @@ class _CustomPricesState extends State<CustomPrices> {
           );
         },
         separatorBuilder: (context, index) {
-          return const SizedBox(width: 40);
+          return const SizedBox(width: 60);
         },
         itemCount: 3,
       ),

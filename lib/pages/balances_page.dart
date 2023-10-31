@@ -105,6 +105,7 @@ class _BalancesScreenState extends State<BalancesScreen> {
                           subtitle: Text(
                             listOfTransactions[index].date,
                             style: TextStyle(
+                              fontSize: 12,
                               color: Colors.grey.shade400,
                             ),
                           ),
