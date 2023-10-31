@@ -1,3 +1,4 @@
+import 'package:app_task/gen/assets.gen.dart';
 import 'package:app_task/gen/fonts.gen.dart';
 import 'package:app_task/models/transactions.dart';
 import 'package:app_task/pages/widgets/custom_prices.dart';
@@ -93,6 +94,9 @@ class _BalancesScreenState extends State<BalancesScreen> {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               color: listOfTransactions[index].color,
+                            ),
+                            child: Assets.svg.wallet.image(
+                              fit: BoxFit.scaleDown,
                             ),
                           ),
                           title: Text(
